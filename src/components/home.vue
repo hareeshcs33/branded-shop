@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Hi</h1>
+    <p>{{message}}</p>
   </div>
 </template>
 
@@ -8,6 +9,11 @@
 export default {
   data () {
     return {
+    }
+  },
+  computed: {
+    message(){
+      return this.$store.state.msg;
     }
   }
 }
