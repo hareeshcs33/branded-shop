@@ -18,6 +18,9 @@ export default {
   color: #2c3e50;
 }
 body {
+  font-family: "lato";
+  font-size: 15px;
   margin: 0;
 }
+
 </style>
