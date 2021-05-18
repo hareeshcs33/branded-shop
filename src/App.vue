@@ -22,5 +22,10 @@ body {
   font-size: 15px;
   margin: 0;
 }
-
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
 </style>

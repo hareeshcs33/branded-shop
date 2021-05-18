@@ -29,3 +29,12 @@ export default {
     }
 }
 </script>
+<style>
+@media (max-width: 767px) {
+    .side-filtered-section {
+        position: absolute;
+        z-index: 1;
+        background: #fff;
+    }
+}
+</style>

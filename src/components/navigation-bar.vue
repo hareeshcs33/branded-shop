@@ -127,6 +127,7 @@ export default {
   border-bottom: 2px solid transparent;
   transition: 0.5s;
   cursor: pointer;
+  white-space: nowrap;
 }
 .menu-links .link:hover {
   border-bottom: 2px solid #111;
@@ -135,6 +136,7 @@ export default {
   border: 1px solid #ccc;
   padding: 6px;
   border-radius: 18px;
+  margin: 10px;
 }
 .search-box input {
   border: 0;
@@ -145,6 +147,7 @@ export default {
 }
 .favorites-cart-links {
   display: flex;
+  margin: 10px;
 }
 
 .cart-link {
@@ -181,6 +184,47 @@ export default {
 }
 .parent-ul-list {
   display: flex;
+}
+
+@media (max-width: 992px) {
+  .main-nav-block {
+    flex-flow: row wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav-block {
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+  .menu-links {
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  .menu-links .link {
+    width: 50%;
+  }
+  .search-box {
+    width: 50%;
+  }
+  .favorites-cart-links {
+    width: 50%;
+  }
+}
+
+@media (max-width: 580px) {
+  .menu-links {
+    flex-direction: column;
+  }
+  .menu-links .link {
+    width: 100%;
+  }
+  .search-box {
+    width: 100%;
+  }
+  .favorites-cart-links {
+    width: 100%;
+  }
 }
 
 </style>

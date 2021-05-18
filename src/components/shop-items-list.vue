@@ -103,4 +103,9 @@ export default {
 .shop-items-list-wrapper.show-full-width {
     width: 100%;
 }
+@media (max-width: 767px) {
+    .shop-items-list-wrapper {
+        width: 100%;
+    }
+}
 </style>
